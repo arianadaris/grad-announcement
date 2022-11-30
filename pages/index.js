@@ -23,7 +23,7 @@ export default function Home() {
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
             <div className="border-b-[1px] border-black w-[200px] mb-8 mt-6" />
-            <h2>Arizona State University</h2>
+            <h2 className="text-center">Arizona State University</h2>
             <h3 className="md:my-6 xs:my-4 lg:mx-10 xs:mx-4 text-center">Please join us in celebration for the Fulton Schools Convocation ceremony at Sun Devil Stadium.</h3>
             <h4>December 15, 2:30pm</h4>
             <h4>500 E. Veterans Way</h4>

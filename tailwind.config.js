@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -8,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      ogg: ["Ogg", ...defaultTheme.fontFamily.ogg],
-      feminine: ["Feminine", ...defaultTheme.fontFamily.feminine]
+      ogg: ["Ogg", "Courier New"],
+      feminine: ["Feminine", "cursive"]
     },
     extend: {
       keyframes: {
@@ -25,7 +23,7 @@ module.exports = {
       animation: {
         upDown: 'upDown 3s infinite'
       },
-      screens: {
+            screens: {
         'xs': '0px'
       },
     },
