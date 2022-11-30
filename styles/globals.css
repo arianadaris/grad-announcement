@@ -26,11 +26,11 @@
   }
 
   h3 {
-    @apply font-ogg text-[18px] tracking-widest
+    @apply font-ogg text-[24px] tracking-widest
   }
 
   h4 {
-    @apply font-ogg text-[18px] text-[rgba(0,0,0,0.5)] tracking-widest
+    @apply font-ogg text-[24px] text-[rgba(0,0,0,0.5)] tracking-widest
   }
 
   h5 {
