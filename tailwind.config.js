@@ -22,7 +22,10 @@ module.exports = {
       },
       animation: {
         upDown: 'upDown 3s infinite'
-      }
+      },
+      screens: {
+        'xs': '0px'
+      },
     },
   },
   plugins: [],

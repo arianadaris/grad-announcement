@@ -8,19 +8,19 @@ export default class PhotoCarousel extends Component {
         return (
             <Carousel className="carousel-wrapper" showStatus={false} autoPlay interval={3000} infiniteLoop showThumbs={false} useKeyboardArrows dynamicHeight={false} >
                 <div>
-                    <Image src={require('../public/images/Ari_3.jpg')} className="mt-[-15vh]" />
+                    <Image src={require('../public/images/Ari_3.jpg')} className="lg:mt-[-15vh] xs:mt-[-17.5vh] md:mt-[-29vh]" />
                 </div>
                 <div>
-                    <Image src={require('../public/images/Ari_1.jpg')} className="mt-[-20vh]" />
+                    <Image src={require('../public/images/Ari_1.jpg')} className="lg:mt-[-20vh] xs:mt-[-12.5vh] md:mt-[-40vh]" />
                 </div>
                 <div>
-                    <Image src={require('../public/images/Ari_4.jpg')} className="mt-[-20vh]" />
+                    <Image src={require('../public/images/Ari_4.jpg')} className="lg:mt-[-20vh] xs:mt-[-15vh] md:mt-[-28vh]" />
                 </div>
                 <div>
-                    <Image src={require('../public/images/Ari_5.jpg')} className="mt-[-15vh]" />
+                    <Image src={require('../public/images/Ari_5.jpg')} className="lg:mt-[-15vh] xs:mt-[-15vh] md:mt-[-30vh]" />
                 </div>
                 <div>
-                    <Image src={require('../public/images/Ari_6.jpg')} className="mt-[-15vh]" />
+                    <Image src={require('../public/images/Ari_6.jpg')} className="lg:mt-[-15vh] xs:mt-[-16vh] md:mt-[-26vh]" />
                 </div>
             </Carousel>
         )

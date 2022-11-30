@@ -18,33 +18,37 @@
   }
 
   h1 {
-    @apply font-ogg text-[60px] 
+    @apply font-ogg md:text-[60px] xs:text-[32px]
   }
 
   h2 {
-    @apply font-ogg text-[32px] tracking-widest
+    @apply font-ogg md:text-[32px] xs:text-[20px] tracking-widest
   }
 
   h3 {
-    @apply font-ogg text-[24px] tracking-widest
+    @apply font-ogg md:text-[24px] xs:text-[14px] tracking-widest
   }
 
   h4 {
-    @apply font-ogg text-[24px] text-[rgba(0,0,0,0.5)] tracking-widest
+    @apply font-ogg md:text-[24px] xs:text-[14px] text-[rgba(0,0,0,0.65)] tracking-widest
   }
 
   h5 {
-    @apply font-feminine text-[64px]
+    @apply font-feminine md:text-[120px] xs:text-[62px]
+  }
+
+  h6 {
+    @apply font-feminine md:text-[84px] xs:text-[60px]
   }
 }
 
 @layer components {
   .asuLogo {
-    @apply w-[175px] absolute top-24
+    @apply md:w-[175px] xs:w-[300px] absolute md:top-[15vh] xs:top-[50vh] md:opacity-100 xs:opacity-50
   }
 
   .personalImage {
-    @apply w-[80%] mx-auto mt-6
+    @apply w-[80%] mx-auto mt-10
   }
 }
 
