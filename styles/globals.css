@@ -34,7 +34,7 @@
   }
 
   h5 {
-    @apply font-feminine md:text-[120px] xs:text-[62px]
+    @apply font-feminine md:text-[120px] xs:text-[62px] 
   }
 
   h6 {

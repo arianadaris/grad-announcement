@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      ogg: ["Ogg", "Courier New"],
-      feminine: ["Feminine", "Arial"]
+      ogg: ["Ogg", ...defaultTheme.fontFamily.ogg],
+      feminine: ["Feminine", ...defaultTheme.fontFamily.feminine]
     },
     extend: {
       keyframes: {
