@@ -18,13 +18,13 @@ export default function Home() {
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[40vh]">
             <PhotoCarousel className="h-full" />
           </div>
-          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col lg:justify-center items-center px-[10vw] lg:h-full xs:h-[60vh] lg:pt-0 xs:pt-12">
+          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col lg:justify-center items-center px-[10vw] lg:h-full xs:h-[60vh] lg:pt-0 md:pt-12 xs:pt-6">
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
             <div className="border-b-[1px] border-black w-[200px] mb-8 mt-6" />
             <h2>Arizona State University</h2>
-            <h3 className="my-6 lg:mx-10 xs:mx-4 text-center">Please join us in celebration for the Fulton Schools Convocation ceremony at Sun Devil Stadium.</h3>
+            <h3 className="md:my-6 xs:my-4 lg:mx-10 xs:mx-4 text-center">Please join us in celebration for the Fulton Schools Convocation ceremony at Sun Devil Stadium.</h3>
             <h4>December 15, 2:30pm</h4>
             <h4>500 E. Veterans Way</h4>
             <h4>Tempe, AZ 85281</h4>
@@ -32,7 +32,7 @@ export default function Home() {
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
             </div>
-            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute bottom-10 animate-upDown" /></a>
+            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-2 animate-upDown" /></a>
           </div>
         </div>
 
