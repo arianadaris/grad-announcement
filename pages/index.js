@@ -14,7 +14,7 @@ export default function Home() {
       <main className="">
         {/* Home Section */}
         <div className="flex h-screen">
-          <div className="w-[45%] h-[100vh] bg-blue-200">
+          <div className="w-[45%] h-[100vh]">
             <PhotoCarousel className="h-full" />
           </div>
           <div className="w-[55%] bg-[#F5F3F0] flex flex-col justify-center items-center px-[10vw]">
