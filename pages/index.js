@@ -49,7 +49,7 @@ export default function Home() {
               <h3 className="my-10 xs:text-center lg:text-left">
                 After receiving a Bachelor's degree in Computer Science, I anticipate attending graduate school at Arizona State in the spring, pursing a Master's degree in Computer Science.
               </h3>
-              <div className="xs:flex-row lg:flex-col lg:justify-between lg:items-center">
+              <div className="flex xs:flex-col lg:flex-row lg:justify-between lg:items-center">
                 <h3 className="xs:text-center lg:text-left">Thank you all for being a part of my journey.</h3>
                 <h5 className="lg:mt-0 xs:mt-6 xs:text-center lg:text-left"><span className="font-ogg">-</span> Ariana Rajewski</h5>
               </div>
