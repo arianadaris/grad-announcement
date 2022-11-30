@@ -9,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Ariana Rajewski | ASU Graduation</title>
         <meta name="description" content="Ariana Rajewski ASU Graduation Announcement" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
       </Head>
 
       <main className="">
