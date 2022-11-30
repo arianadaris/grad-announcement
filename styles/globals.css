@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: Feminine;
-  src: url('../public/fonts/Feminine.ttf') format('ttf');
+  src: url('../public/fonts/feminine-webfont.woff') format('woff');
 }
 
 @layer base {

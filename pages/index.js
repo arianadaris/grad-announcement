@@ -22,7 +22,7 @@ export default function Home() {
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
-            <div className="border-b-[1px] border-black w-[200px] mb-8 mt-6" />
+            <div className="border-b-[1px] border-black w-[200px] lg:mb-8 lg:mt-6 xs:mt-2 xs:mb-4" />
             <h2 className="text-center">Arizona State University</h2>
             <h3 className="md:my-6 xs:my-4 lg:mx-10 xs:mx-4 text-center">Please join us in celebration for the Fulton Schools Convocation ceremony at Sun Devil Stadium.</h3>
             <h4>December 15, 2:30pm</h4>
@@ -32,7 +32,7 @@ export default function Home() {
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
             </div>
-            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-2 animate-upDown" /></a>
+            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-4 animate-upDown" /></a>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export default function Home() {
               <h1 className="lg:w-[50%] xs:text-center lg:text-left">THANK YOU</h1>
               <div className="border-b-[1px] border-black lg:w-[100%] xs:w-[50%] mb-8 mt-6 mx-auto" />
             </div>
-            <div className="my-20">
+            <div className="lg:my-20">
               <h3 className="my-10 xs:text-center lg:text-left">
                 To everyone who has supported me throughout the completion of my degree, thank you. Your love and encouragement means the world.
               </h3>
