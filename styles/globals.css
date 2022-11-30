@@ -1,26 +1,53 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Ogg;
+  src: url('../public/fonts/ogg-roman-webfont.woff') format('woff');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: Feminine;
+  src: url('../public/fonts/Feminine.ttf') format('ttf');
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   html {
-    color-scheme: dark;
+    @apply scroll-smooth
   }
-  body {
-    color: white;
-    background: black;
+
+  h1 {
+    @apply font-ogg text-[60px] 
   }
+
+  h2 {
+    @apply font-ogg text-[32px] tracking-widest
+  }
+
+  h3 {
+    @apply font-ogg text-[18px] tracking-widest
+  }
+
+  h4 {
+    @apply font-ogg text-[18px] text-[rgba(0,0,0,0.5)] tracking-widest
+  }
+
+  h5 {
+    @apply font-feminine text-[64px]
+  }
+}
+
+@layer components {
+  .asuLogo {
+    @apply w-[175px] absolute top-24
+  }
+
+  .personalImage {
+    @apply w-[80%] mx-auto mt-6
+  }
+}
+
+.carousel-wrapper, .carousel, .carousel > .slider-wrapper, .carousel > .slider-wrapper > .slider {
+  height: 100%;
 }
