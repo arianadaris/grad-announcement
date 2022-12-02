@@ -14,11 +14,11 @@ export default function Home() {
 
       <main className="">
         {/* Home Section */}
-        <div className="lg:flex lg:flex-row xs:flex-col h-screen">
+        <div className="lg:flex lg:flex-row xs:flex-col h-full">
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[35vh]">
             <PhotoCarousel className="h-full" />
           </div>
-          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col lg:justify-center items-center px-[10vw] lg:h-full xs:h-[65vh] lg:pt-0 md:pt-12 xs:pt-6">
+          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col lg:justify-center items-center px-[10vw] lg:h-full xs:h-[55vh] lg:pt-0 md:pt-12 xs:pt-6">
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
@@ -32,7 +32,7 @@ export default function Home() {
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
             </div>
-            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-2 animate-upDown" /></a>
+            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-24 animate-upDown" /></a>
           </div>
         </div>
 
