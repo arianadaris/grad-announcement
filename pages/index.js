@@ -32,7 +32,7 @@ export default function Home() {
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
             </div>
-            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-4 animate-upDown" /></a>
+            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-2 animate-upDown" /></a>
           </div>
         </div>
 
