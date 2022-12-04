@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 import PhotoCarousel from '../components/PhotoCarousel';
 
 export default function Home() {
+  let windowHeight = window.innerHeight;
   return (
     <div>
       <Head>
@@ -14,7 +15,7 @@ export default function Home() {
 
       <main className="">
         {/* Home Section */}
-        <div className="lg:flex lg:flex-row xs:flex-col h-full">
+        <div className="lg:flex lg:flex-row xs:flex-col xs:h-full md:h-screen">
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[35vh]">
             <PhotoCarousel className="h-full" />
           </div>
@@ -32,7 +33,7 @@ export default function Home() {
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
             </div>
-            <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-0 animate-upDown" /></a>
+            {windowHeight > 735 ? <a href="#thankyou"><Icon icon="ph:arrow-down" className="absolute md:bottom-10 xs:bottom-0 animate-upDown" /></a> : null}
           </div>
         </div>
 

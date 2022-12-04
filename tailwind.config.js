@@ -18,10 +18,19 @@ module.exports = {
           '50%': {
             transform: 'translateY(0)'
           }
+        },
+        mobileUpDown: {
+          '0%, 100%': {
+            transform: 'translateY(-50%)'
+          },
+          '50%': {
+            transform: 'translateY(0)'
+          }
         }
       },
       animation: {
-        upDown: 'upDown 3s infinite'
+        upDown: 'upDown 3s infinite',
+        mobileUpDown: 'mobileUpDown 3s infinite'
       },
             screens: {
         'xs': '0px'
