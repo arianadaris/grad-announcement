@@ -12,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <main className="">
+      <main className="bg-blue-200">
         {/* Home Section */}
-        <div className="lg:flex lg:flex-row xs:flex-col h-screen">
+        <div className="lg:flex lg:flex-row xs:flex-col md:h-screen xs:h-full">
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[40vh]">
             <PhotoCarousel className="h-full" />
           </div>
