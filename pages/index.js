@@ -8,7 +8,7 @@ export default function Home() {
     if (typeof window !== undefined && (navigator.platform.indexOf('iPhone') != -1 || navigator.platform.indexOf('iPod') != -1 || navigator.platform.indexOf('iPad') != -1))
       window.open('maps://www.google.com/maps/place/500+E+Veterans+Way,+Tempe,+AZ+85287/@33.4254655,-111.9346061,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08df1a0a8407:0xb1d3165cdf5a7bd!8m2!3d33.425461!4d-111.9324174');
     else
-      window.open('https://www.google.com/maps/place/500+E+Veterans+Way,+Tempe,+AZ+85287/@33.4254655,-111.9346061,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08df1a0a8407:0xb1d3165cdf5a7bd!8m2!3d33.425461!4d-111.9324174');
+      window.open('https://maps.apple.com/?address=500%20E%20Veterans%20Way,%20Tempe,%20AZ%2085281,%20United%20States&auid=12830467876346408132&ll=33.426463,-111.932487&lsp=9902&q=Sun%20Devil%20Stadium&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAGCgQIVRAMCgQIWRAGCgUIpAEQARIkKdQ/LatVtkBAMZq9Iq7S+1vAObS235D8tkBAQRiQYiWL+1vA&t=m');
   }
 
   return (
