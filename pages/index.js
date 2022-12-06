@@ -4,6 +4,13 @@ import { Icon } from '@iconify/react';
 import PhotoCarousel from '../components/PhotoCarousel';
 
 export default function Home() {
+  const openMaps = () => {
+    if (typeof window !== undefined && (navigator.platform.indexOf('iPhone') != -1 || navigator.platform.indexOf('iPod') != -1 || navigator.platform.indexOf('iPad') != -1))
+      window.open('maps://www.google.com/maps/place/500+E+Veterans+Way,+Tempe,+AZ+85287/@33.4254655,-111.9346061,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08df1a0a8407:0xb1d3165cdf5a7bd!8m2!3d33.425461!4d-111.9324174');
+    else
+      window.open('https://www.google.com/maps/place/500+E+Veterans+Way,+Tempe,+AZ+85287/@33.4254655,-111.9346061,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08df1a0a8407:0xb1d3165cdf5a7bd!8m2!3d33.425461!4d-111.9324174');
+  }
+
   return (
     <div>
       <Head>
@@ -12,13 +19,13 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <main className="bg-blue-200">
+      <main className="bg-[#F5F3F0]">
         {/* Home Section */}
         <div className="lg:flex lg:flex-row xs:flex-col md:h-screen xs:h-full">
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[40vh]">
             <PhotoCarousel className="h-full" />
           </div>
-          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col md:justify-center items-center px-[10vw] lg:h-full xs:h-[45vh] lg:pt-0 md:pt-12 xs:pt-4">
+          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col md:justify-center items-center px-[10vw] lg:h-full xs:h-[45vh] lg:pt-0 md:pt-12 xs:pt-6">
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
@@ -26,8 +33,10 @@ export default function Home() {
             <h2 className="text-center">Arizona State University</h2>
             <h3 className="md:my-6 xs:my-4 lg:mx-10 xs:mx-4 text-center">Please join us in celebration for the Fulton Schools Convocation ceremony at Sun Devil Stadium.</h3>
             <h4>December 15, 2:30pm</h4>
-            <h4>500 E. Veterans Way</h4>
-            <h4>Tempe, AZ 85281</h4>
+            <a onClick={() => openMaps()} target="_blank" rel="noreferrer">
+              <h4>500 E. Veterans Way</h4>
+              <h4>Tempe, AZ 85281</h4>
+            </a>
             <div className='absolute bottom-[10vh] flex-col lg:visible xs:hidden'>
                 <h3 className="text-center">With Love,</h3>
                 <h6>The Rajewski Family</h6>
@@ -55,7 +64,7 @@ export default function Home() {
                 <h5 className="lg:mt-0 xs:mt-6 xs:text-center lg:text-left md:w-[50%] xs:w-full"><span className="font-ogg">-</span> Ariana Rajewski</h5>
               </div>
             </div>
-            <a href="https://www.arianadaris.dev/" target="_blank" rel="noreferrer"><h4 className="absolute bottom-5 hover:text-[rgba(0,0,0,0.75)]">arianadaris.dev</h4></a>
+            <a href="https://www.arianadaris.dev/" target="_blank" rel="noreferrer"><h4 className="absolute bottom-10 hover:text-[rgba(0,0,0,0.75)]">arianadaris.dev</h4></a>
           </div>
           <div className="lg:w-[40%] xs:w-0 md:mt-[-2vh]">
             <Image src={require('../public/images/Ari_2.jpg')} className="personalImage" />
