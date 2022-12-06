@@ -14,11 +14,11 @@ export default function Home() {
 
       <main className="">
         {/* Home Section */}
-        <div className="lg:flex lg:flex-row xs:flex-col xs:h-full md:h-screen">
+        <div className="lg:flex lg:flex-row xs:flex-col h-screen">
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[40vh]">
             <PhotoCarousel className="h-full" />
           </div>
-          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col md:justify-center items-center px-[10vw] lg:h-full xs:h-[60vh] lg:pt-0 md:pt-12 xs:pt-4">
+          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col md:justify-center items-center px-[10vw] lg:h-full xs:h-[45vh] lg:pt-0 md:pt-12 xs:pt-4">
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
@@ -52,7 +52,7 @@ export default function Home() {
               </h3>
               <div className="flex xs:flex-col lg:flex-row lg:justify-between lg:items-center">
                 <h3 className="xs:text-center lg:text-left">Thank you all for being a part of my journey.</h3>
-                <h5 className="lg:mt-0 xs:mt-6 xs:text-center lg:text-left w-[50%]"><span className="font-ogg">-</span> Ariana Rajewski</h5>
+                <h5 className="lg:mt-0 xs:mt-6 xs:text-center lg:text-left md:w-[50%] xs:w-full"><span className="font-ogg">-</span> Ariana Rajewski</h5>
               </div>
             </div>
             <a href="https://www.arianadaris.dev/" target="_blank" rel="noreferrer"><h4 className="absolute bottom-5 hover:text-[rgba(0,0,0,0.75)]">arianadaris.dev</h4></a>
