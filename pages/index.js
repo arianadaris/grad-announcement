@@ -18,7 +18,7 @@ export default function Home() {
           <div className="lg:w-[45%] xs:w-full lg:h-[100vh] xs:h-[40vh]">
             <PhotoCarousel className="h-full" />
           </div>
-          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col justify-center items-center px-[10vw] lg:h-full xs:h-[60vh] lg:pt-0 md:pt-12 xs:pt-2">
+          <div className="lg:w-[55%] xs:w-full bg-[#F5F3F0] flex flex-col md:justify-center items-center px-[10vw] lg:h-full xs:h-[60vh] lg:pt-0 md:pt-12 xs:pt-4">
             <Image className="asuLogo" src={require('../public/images/ASU_Logo.png')} />
             <h2>Class of 2022</h2>
             <h1>Ariana Rajewski</h1>
