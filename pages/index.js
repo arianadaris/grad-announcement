@@ -27,15 +27,17 @@ export default function Home() {
   return (
     <div>
       <div className="loaderWrapper">
-        <div className="gradWrapper">
-          <div className="capTop" />
-          <div className="capBottom" />
-          <div className="capBodyTop" />
-          <div className="capShadow" />
-          <div className="tasselLeft" />
-          <div className="tasselRight" />
+        <div className="loader">
+          <div className="gradWrapper">
+            <div className="capTop" />
+            <div className="capBottom" />
+            <div className="capBodyTop" />
+            <div className="capShadow" />
+            <div className="tasselLeft" />
+            <div className="tasselRight" />
+          </div>
+          <h3 className="mt-14">Get ready to celebrate...</h3>
         </div>
-        <h3 className="mt-14">Get ready to celebrate...</h3>
       </div>
       <main className="bg-[#F5F3F0]">
         {/* Home Section */}

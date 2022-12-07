@@ -129,6 +129,9 @@
   height: fit-content;
 }
 
+.loader {
+  animation: hideContent 0.5s 3.75s ease-in-out forwards;
+}
 
 .loaderWrapper {
   position: absolute;
@@ -140,7 +143,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1001;
-  animation: hideLoader 0.5s 4.5s ease-in-out forwards;
+  animation: hideLoader 0.5s 4.25s ease-in-out forwards;
 }
 
 @keyframes moveRightUp {
@@ -190,7 +193,15 @@
     width: 100%;
   }
   100% {
-    width: 0;
+    width: 0%;
+  }
+}
+
+@keyframes hideContent {
+  0% {
+
+  }
+  100% {
     opacity: 0;
   }
 }
