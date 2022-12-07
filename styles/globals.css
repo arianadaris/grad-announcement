@@ -44,7 +44,7 @@
 
 @layer components {
   .asuLogo {
-    @apply md:w-[175px] xs:w-[250px] absolute md:top-[15vh] xs:top-[50vh] md:opacity-100 xs:opacity-50
+    @apply md:w-[175px] xs:w-[250px] absolute md:top-[15vh] xs:top-[45vh] md:opacity-100 xs:opacity-50
   }
 
   .personalImage {
