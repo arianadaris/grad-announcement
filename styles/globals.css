@@ -55,3 +55,141 @@
 .carousel-wrapper, .carousel, .carousel > .slider-wrapper, .carousel > .slider-wrapper > .slider {
   height: 100%;
 }
+
+.gradWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.capTop {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 15px solid #660d29;
+}
+
+.capBottom {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: absolute;
+  z-index: 0;
+  border-top: 15px solid #660d29;
+}
+
+.capBodyTop {
+  background-color: #8C1D40;
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  top: 12.5px;
+  left: 20%;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.capShadow {
+  background-color: #660d29;
+  width: 60px;
+  height: 15px;
+  position: absolute;
+  left: 20%;
+  top: 30px;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.tasselRight {
+  background-color: #FFC627;
+  width: 5px;
+  height: 45px;
+  position: absolute;
+  border-radius: 100px;
+  left: 78.5%;
+  top: 9px;
+  z-index: 101;
+  animation: moveRightUp 0.75s 2s ease-in-out forwards;
+}
+
+.tasselLeft {
+  background-color: #FFC627;
+  width: 5px;
+  height: 0px;
+  position: absolute;
+  border-radius: 100px;
+  left: 19.5%;
+  top: 9px;
+  z-index: 101;
+  animation: moveLeftDown 0.75s 3s ease-in-out forwards;
+}
+
+.gradWrapper {
+  margin: 0 auto;
+  transform: scale(0);
+  animation: shake 1.5s ease-in-out forwards;
+  width: fit-content;
+  height: fit-content;
+}
+
+
+.loaderWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F3F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  animation: hideLoader 0.5s 4.5s ease-in-out forwards;
+}
+
+@keyframes moveRightUp {
+  0% {
+    height: 45px;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes moveLeftDown {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 45px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(0);
+  }
+  16% {
+    transform: scale(1);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  66% {
+    transform: rotate(15deg);
+  }
+  83% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes hideLoader {
+  0% {
+    opacity: 100%
+  }
+  100% {
+    opacity: 0;
+  }
+}

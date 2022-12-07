@@ -1,9 +1,15 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import { Icon } from '@iconify/react';
 import PhotoCarousel from '../components/PhotoCarousel';
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [ loading, setLoading ] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+  })
+
   const openMaps = () => {
     if (typeof window !== undefined && (navigator.platform.indexOf('iPhone') != -1 || navigator.platform.indexOf('iPod') != -1 || navigator.platform.indexOf('iPad') != -1))
       window.open('maps://www.google.com/maps/place/500+E+Veterans+Way,+Tempe,+AZ+85287/@33.4254655,-111.9346061,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08df1a0a8407:0xb1d3165cdf5a7bd!8m2!3d33.425461!4d-111.9324174');
@@ -11,14 +17,26 @@ export default function Home() {
       window.open('https://maps.apple.com/?address=500%20E%20Veterans%20Way,%20Tempe,%20AZ%2085281,%20United%20States&auid=12830467876346408132&ll=33.426463,-111.932487&lsp=9902&q=Sun%20Devil%20Stadium&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhAVCgQIChAACgQIUhAGCgQIVRAMCgQIWRAGCgUIpAEQARIkKdQ/LatVtkBAMZq9Iq7S+1vAObS235D8tkBAQRiQYiWL+1vA&t=m');
   }
 
+  // Doing it this way to avoid hydration error
+  const openPersonalWebsite = () => {
+    typeof window !== undefined ? window.open('https://www.arianadaris.dev/') : null;
+  }
+
+
+
   return (
     <div>
-      <Head>
-        <title>Ariana Rajewski | ASU Graduation</title>
-        <meta name="description" content="Ariana Rajewski ASU Graduation Announcement" />
-        <link rel="icon" href="/images/favicon.png" />
-      </Head>
-
+      <div className="loaderWrapper">
+        <div className="gradWrapper">
+          <div className="capTop" />
+          <div className="capBottom" />
+          <div className="capBodyTop" />
+          <div className="capShadow" />
+          <div className="tasselLeft" />
+          <div className="tasselRight" />
+        </div>
+        <h3 className="mt-14">Get ready to celebrate...</h3>
+      </div>
       <main className="bg-[#F5F3F0]">
         {/* Home Section */}
         <div className="lg:flex lg:flex-row xs:flex-col md:h-screen xs:h-full">
@@ -63,8 +81,9 @@ export default function Home() {
                 <h3 className="xs:text-center lg:text-left">Thank you all for being a part of my journey.</h3>
                 <h5 className="lg:mt-0 xs:mt-6 xs:text-center lg:text-left md:w-[50%] xs:w-full"><span className="font-ogg">-</span> Ariana Rajewski</h5>
               </div>
+              <h4 className="absolute bottom-10 hover:text-[rgba(0,0,0,0.75)] hover:cursor-pointer" onClick={() => openPersonalWebsite()}>arianadaris.dev</h4>
             </div>
-            <a href="https://www.arianadaris.dev/" target="_blank" rel="noreferrer"><h4 className="absolute bottom-10 hover:text-[rgba(0,0,0,0.75)]">arianadaris.dev</h4></a>
+            
           </div>
           <div className="lg:w-[40%] xs:w-0 md:mt-[-2vh]">
             <Image src={require('../public/images/Ari_2.jpg')} className="personalImage" />
