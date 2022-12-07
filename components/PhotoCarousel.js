@@ -12,10 +12,10 @@ export default class PhotoCarousel extends Component {
                 </div>
                 <div>
                     <Image src={require('../public/images/Ari_1.jpg')} className="lg:mt-[-20vh] xs:mt-[-20vh] md:mt-[-40vh]" />
-                
-                    <div>
-                    <Image src={require('../public/images/Ari_2.jpg')} className="lg:mt-[-15vh] xs:mt-[-16vh] md:mt-[-26vh]" />
-                </div></div>
+                </div>
+                <div>
+                    <Image src={require('../public/images/Ari_2.jpg')} className="lg:mt-[-15vh] xs:mt-[-25vh] md:mt-[-26vh]" />
+                </div>
                 <div>
                     <Image src={require('../public/images/Ari_4.jpg')} className="lg:mt-[-20vh] xs:mt-[-15vh] md:mt-[-28vh]" />
                 </div>
